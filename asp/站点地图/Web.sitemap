@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default.aspx" title="返回首页"  description="首页">
+        <siteMapNode url="~/Default1.aspx" title="我们的产品"  description="" >
+				<siteMapNode url="~/Default2.aspx" title="软件产品"  description="" />
+				<siteMapNode url=" ~/Default3.aspx" title="硬件产品" description=""/>
+		</siteMapNode>
+		
+		<siteMapNode url="~/Default4.aspx" title="我们的服务"  description="" >
+			<siteMapNode url="~/Default5.aspx" title="培训服务"  description="" />
+			<siteMapNode url="~/Default6.aspx" title="咨询服务" description=""/>
+			<siteMapNode url="~/Default7.aspx" title="技术支持" description=""/>
+		</siteMapNode>
+
+    </siteMapNode>
+</siteMap>
+<!--一个siteMap只包含了一个“<siteMapNode></siteMapNode>”，而它中间
+的站点地图节点可以包含任意数量的节点是这样的写的“<siteMapNode/>”
+注意它后面的‘/’
+-->

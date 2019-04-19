@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="branding" ><h1 >我的网站</h1></div>
+            <div id="cotent">
+                      <div id="mainNav">
+            <ul >
+                <li><a>我的首页</a></li>
+                <li><a>生活艺术</a></li>
+                <li><a>学习天地</a></li>
+                <li><a>友情链接</a></li>
+                <li><a>有话要说</a></li>
+            
+            </ul>
+            </div>
+
+                    <div id="mainContent">
+                        <asp:ContentPlaceHolder id="Conten" runat="server" ></asp:ContentPlaceHolder>
+                    </div>
+                    <div id="secondaryContent"><h2>每日推荐</h2><p>请在这里添加文字</p></div>
+            </div>
+           
+          <div id="footer"><p>CopyRight@2018.All Right Reserved.</p></div>
+       
+    </div>
+    </form>
+</body>
+</html>

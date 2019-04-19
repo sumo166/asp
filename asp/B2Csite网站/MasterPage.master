@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="body">
+    <div id="logo">&nbsp;//设置行高为div高度可以居中</div>
+    <div id="headtext">
+        <p><a href="#">注册</a>/<a href="#">登录</a>/<a href="Default.aspx?theme=blue">蓝色主题</a>/<a href="Default.aspx?theme=gray">灰色主题</a>/<a href="#">收藏本站</a></p>
+        
+    </div>
+    <div id="navigation">
+        <div id="time">
+            <p>今天是：<asp:Label ID="label1" runat="server"></asp:Label></p>
+        </div>
+        <div id="naviggationtext">
+               <ul id="bt">
+                    <li><a href="Default.aspx">首页</a></li>
+                    <li><a href="member.aspx">会员中心</a></li>
+                    <li><a href="query.aspx">商品查询</a></li>
+                    <li><a href="Management.aspx">商品管理</a></li>
+                    <li><a href="survey.aspx">在线调查</a></li>
+                    <li><a href="#">交流中心</a></li>
+                   
+               </ul>
+        </div>
+    </div>
+    <div id="picture"></div>
+    <div id="commcon">
+        <div id="Commodity">
+            <ul id="COM1">
+                    <li id="shang"><a href="~/Default.aspx">商品类别导航</a></li>
+                    <li><a href="~/member.aspx">鲜花绿植</a></li>
+                    <li><a href="~/query.aspx">时尚服装</a></li>
+                    <li><a href="~/Management.aspx">学习用品</a></li>
+                    <li><a href="~/survey.aspx">自用百货</a></li>
+                    <li><a href="#">时尚礼品</a></li>
+                   
+               </ul>
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </div>
+    </form>
+</body>
+</html>
