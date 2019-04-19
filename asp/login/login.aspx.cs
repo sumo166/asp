@@ -14,8 +14,10 @@ public partial class login : System.Web.UI.Page
         string pwd = "";
         if (Request.Cookies["user"] != null && Request.Cookies["user"]["uName"] != null) 
         {
-          
-            if (name == "xiaohu" && pwd == "admin")
+
+            name = Request.Cookies["user"]["uName"];
+            pwd = Request.Cookies["user"]["uPwd"];
+           if (name == "xiaohu" && pwd == "admin")
            
 
              
