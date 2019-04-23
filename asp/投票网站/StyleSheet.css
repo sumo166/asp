@@ -1,0 +1,30 @@
+﻿
+*
+{
+    border: 1px inset #CCCCFF;
+    padding: 0 0 0 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+#body
+{
+    width: 1000px;
+    text-align:center;
+
+}
+#subject
+{
+    margin:0 auto;
+    width:500px;
+}
+
+
+
+
+
+
+#subject h2,#btn
+{
+    text-align:center;
+}
